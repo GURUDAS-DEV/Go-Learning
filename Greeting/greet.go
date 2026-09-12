@@ -27,3 +27,10 @@ func randomString() string {
 
 	return format[rand.Intn(len(format))]
 }
+
+func testing() {
+	const num string = "dag"
+
+	println(num)
+
+}

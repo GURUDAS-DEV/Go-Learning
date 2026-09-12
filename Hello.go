@@ -1,8 +1,8 @@
 package main
 
 import (
+	c "Hello/ConditionalStatements"
 	g "Hello/Greeting"
-	p "Hello/NumericConstant"
 	"errors"
 	"fmt"
 	m "math"
@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	p.Main()
+	c.WhileLoop()
 }
 
 func truncuateName(name string) (string, error) {

@@ -7,7 +7,8 @@ func PointerLearning() {
 	val := 23
 	point = &val
 
-	fmt.Println("Pointer value : ", *point)
-	fmt.Println("real value : ", val)
+	fmt.Println("Num : ", val)
+	*point = *point + 1
 
+	fmt.Println("Num after editing: ", *point)
 }

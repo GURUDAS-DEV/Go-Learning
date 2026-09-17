@@ -2,7 +2,7 @@ package main
 
 import (
 	g "Hello/Greeting"
-	pointers "Hello/Pointers"
+	st "Hello/StructLearn"
 	"errors"
 	"fmt"
 	m "math"
@@ -16,7 +16,10 @@ func main() {
 	// d.LearnDefer()
 	// d.LearnDeferFunc()
 	// d.MultipleDefer()
-	pointers.PointerLearning()
+	// pointers.PointerLearning()
+	// st.Structlearning()
+	// st.PointerTOStruct()
+	st.Main()
 }
 
 func truncuateName(name string) (string, error) {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	c "Hello/ConditionalStatements"
 	g "Hello/Greeting"
+	pointers "Hello/Pointers"
 	"errors"
 	"fmt"
 	m "math"
@@ -10,7 +10,13 @@ import (
 )
 
 func main() {
-	c.WhileLoop()
+	// c.WhileLoop()
+	// c.IfElse()
+	// c.ShortIfElse()
+	// d.LearnDefer()
+	// d.LearnDeferFunc()
+	// d.MultipleDefer()
+	pointers.PointerLearning()
 }
 
 func truncuateName(name string) (string, error) {

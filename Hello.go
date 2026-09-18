@@ -1,8 +1,8 @@
 package main
 
 import (
+	arr "Hello/ArrayLearning"
 	g "Hello/Greeting"
-	st "Hello/StructLearn"
 	"errors"
 	"fmt"
 	m "math"
@@ -19,7 +19,8 @@ func main() {
 	// pointers.PointerLearning()
 	// st.Structlearning()
 	// st.PointerTOStruct()
-	st.Main()
+	// st.Main()
+	arr.Main()
 }
 
 func truncuateName(name string) (string, error) {

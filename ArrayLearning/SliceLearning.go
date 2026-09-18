@@ -3,7 +3,7 @@ package ArrayLearning
 import "fmt"
 
 func Main() {
-	main()
+	LearnArray()
 }
 
 func LearnArray() {
@@ -13,7 +13,10 @@ func LearnArray() {
 		fmt.Print("Enter the Number : ")
 		fmt.Scan(&arr[i])
 	}
-	fmt.Println(arr)
+
+	for _, ele := range arr {
+		fmt.Printf("Value : %d\n", ele)
+	}
 
 	var sli []int = arr[1:5]
 
@@ -57,4 +60,9 @@ func main() {
 func printSlice2(s string, x []int) {
 	fmt.Printf("%s len=%d cap=%d %v\n",
 		s, len(x), cap(x), x)
+}
+
+func appending() {
+	var arr [3]int
+	fmt.Print(arr[1])
 }

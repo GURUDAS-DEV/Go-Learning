@@ -1,8 +1,8 @@
 package main
 
 import (
-	arr "Hello/ArrayLearning"
 	g "Hello/Greeting"
+	closure "Hello/closures"
 	"errors"
 	"fmt"
 	m "math"
@@ -20,7 +20,9 @@ func main() {
 	// st.Structlearning()
 	// st.PointerTOStruct()
 	// st.Main()
-	arr.Main()
+	// arr.Main()
+	// hash.Main()
+	closure.ClousersPractice()
 }
 
 func truncuateName(name string) (string, error) {

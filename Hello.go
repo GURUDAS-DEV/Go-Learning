@@ -2,7 +2,7 @@ package main
 
 import (
 	g "Hello/Greeting"
-	met "Hello/Method"
+	inter "Hello/Interface"
 	"errors"
 	"fmt"
 	m "math"
@@ -23,7 +23,8 @@ func main() {
 	// arr.Main()
 	// hash.Main()
 	// closure.ClousersPractice()
-	met.Main()
+	// met.Main()
+	inter.Main()
 }
 
 func truncuateName(name string) (string, error) {

@@ -3,11 +3,7 @@ package Interface
 import "fmt"
 
 func Main() {
-	smsFromTwillo := TwilloSMS{}
-	sending(&smsFromTwillo, "234235")
-
-	smsFromSNS := SnsSMS{}
-	sending(&smsFromSNS, "367658")
+	stringerLearn()
 }
 
 type smsSending interface {
@@ -20,6 +16,10 @@ func (s *TwilloSMS) send(to string, message string) {
 	fmt.Printf("Sending OTP To %s, OTP : %s from Twillo\n", to, message)
 }
 
+func (s *TwilloSMS) checkBalance() {
+	fmt.Printf("Checking Balance : 3lkhs\n")
+}
+
 type SnsSMS struct{}
 
 func (s *SnsSMS) send(to string, message string) {
@@ -28,4 +28,13 @@ func (s *SnsSMS) send(to string, message string) {
 
 func sending(s smsSending, otp string) {
 	s.send("Gurudas", otp)
+}
+
+func check(s smsSending) {
+	t, ok := s.(*TwilloSMS)
+	if ok {
+		t.checkBalance()
+	} else {
+		fmt.Println("Error")
+	}
 }

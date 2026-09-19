@@ -3,7 +3,7 @@ package Interface
 import "fmt"
 
 func Main() {
-	stringerLearn()
+	AnyLearn()
 }
 
 type smsSending interface {

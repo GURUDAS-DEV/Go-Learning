@@ -1,8 +1,8 @@
 package main
 
 import (
+	routine "Hello/GoRoutines"
 	g "Hello/Greeting"
-	inter "Hello/Interface"
 	"errors"
 	"fmt"
 	m "math"
@@ -24,7 +24,8 @@ func main() {
 	// hash.Main()
 	// closure.ClousersPractice()
 	// met.Main()
-	inter.Main()
+	// inter.Main()
+	routine.Main()
 }
 
 func truncuateName(name string) (string, error) {

@@ -1,12 +1,12 @@
 package goroutines
 
-import "fmt"
+import "fmt"  
 
 func Channels() {
 	ch := make(chan int)
 
 	go func() {
-		ch <- 42
+		ch <- 42s
 	}()
 
 	value := <-ch
